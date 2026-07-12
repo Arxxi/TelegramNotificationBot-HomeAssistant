@@ -1,5 +1,5 @@
 name: LoL Telegram Notifier
-version: "0.1.3"
+version: "0.1.4"
 slug: lol_telegram_notifier
 description: Notify a Telegram group when configured League of Legends players start a game.
 url: https://github.com/Arxxi/TelegramNotificationBot-HomeAssistant/tree/main/lol-telegram-notifier
