@@ -5,9 +5,6 @@ configuration:
   riot_api_key:
     name: Riot API key
     description: Personal Riot API key for EUW.
-  telegram_chat_id:
-    name: Telegram group chat ID
-    description: The negative group ID returned by discover-telegram.
   players:
     name: Players
     description: Riot IDs in GameName#TAG format. Telegram IDs are not required.
