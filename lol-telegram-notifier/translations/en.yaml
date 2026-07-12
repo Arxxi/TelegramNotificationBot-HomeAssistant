@@ -1,0 +1,35 @@
+configuration:
+  telegram_bot_token:
+    name: Telegram bot token
+    description: Token issued by BotFather.
+  riot_api_key:
+    name: Riot API key
+    description: Personal Riot API key for EUW.
+  telegram_chat_id:
+    name: Telegram group chat ID
+    description: The negative group ID returned by discover-telegram.
+  players:
+    name: Players
+    description: Riot IDs in GameName#TAG format. Telegram IDs are not required.
+  poll_interval_seconds:
+    name: Poll interval (seconds)
+  timezone:
+    name: Timezone
+  start_time:
+    name: Monitoring start time
+    description: Use HH:MM.
+  end_time:
+    name: Monitoring end time
+    description: Use HH:MM or 24:00.
+  notify_existing_on_start:
+    name: Notify games already in progress on startup
+  allow_all:
+    name: Allow all queues
+  allowed_queue_ids:
+    name: Allowed queue IDs
+    description: Used only when Allow all queues is disabled.
+  max_group_size:
+    name: Suppress notification when this many tracked players share a team
+  repeat_notifications_for_testing:
+    name: Repeat notifications for testing
+    description: Leave disabled in normal operation because every poll will send another notification.
