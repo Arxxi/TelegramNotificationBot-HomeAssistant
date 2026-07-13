@@ -33,3 +33,18 @@ configuration:
   repeat_notifications_for_testing:
     name: Repeat notifications for testing
     description: Leave disabled in normal operation because every poll will send another notification.
+  profile_icons_enabled:
+    name: Inline League profile icons
+    description: Enable after entering the optional emoji set owner ID.
+  emoji_set_owner_user_id:
+    name: Emoji set owner Telegram ID
+    description: Optional. Send /myid to the bot to retrieve your ID. Leave blank to keep normal text notifications.
+  statistics_enabled:
+    name: Weekly statistics
+  weekly_recap_time:
+    name: Weekly recap time
+    description: Monday local time in HH:MM.
+  minimum_pair_games:
+    name: Minimum games for duo statistics
+  match_retention_days:
+    name: Match history retention (days)
