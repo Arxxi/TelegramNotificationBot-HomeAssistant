@@ -8,6 +8,9 @@ configuration:
   players:
     name: Players
     description: Riot IDs in GameName#TAG format. Telegram IDs are not required.
+  teammate_exclusion_players:
+    name: Teammate exclusion players
+    description: Riot IDs in GameName#TAG format. Suppress a notification only when one shares a tracked player's team.
   poll_interval_seconds:
     name: Poll interval (seconds)
   timezone:

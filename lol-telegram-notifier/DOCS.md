@@ -9,6 +9,9 @@ tracked players start a game.
 - **Riot API key**: use a Personal Riot API key for a persistent installation.
 - **Players**: add each player as `GameName#TAG`. Telegram IDs are not needed unless a
   future version enables direct mentions.
+- **Teammate exclusion players**: optional Riot IDs in `GameName#TAG` format. A notification
+  is suppressed only when one of these players is on the same team as a tracked player; an
+  excluded opponent does not suppress the notification.
 
 After starting the app, add the bot to a group and send `/enable` there. The bot confirms
 the subscription in that chat. Use `/test` to send a sample notification and `/disable` to

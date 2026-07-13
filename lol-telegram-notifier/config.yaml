@@ -1,5 +1,5 @@
 name: LoL Telegram Notifier
-version: "0.1.5"
+version: "0.1.6"
 slug: lol_telegram_notifier
 description: Notify a Telegram group when configured League of Legends players start a game.
 url: https://github.com/Arxxi/TelegramNotificationBot-HomeAssistant/tree/main/lol-telegram-notifier
@@ -12,6 +12,7 @@ options:
   telegram_bot_token: null
   riot_api_key: null
   players: []
+  teammate_exclusion_players: []
   poll_interval_seconds: 60
   timezone: Europe/Kyiv
   start_time: "00:00"
@@ -25,6 +26,8 @@ schema:
   telegram_bot_token: password
   riot_api_key: password
   players:
+    - str
+  teammate_exclusion_players:
     - str
   poll_interval_seconds: int(15,)
   timezone: str
