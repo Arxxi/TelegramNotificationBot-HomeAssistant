@@ -1,5 +1,5 @@
 name: LoL Telegram Notifier
-version: "0.1.6"
+version: "0.1.7"
 slug: lol_telegram_notifier
 description: Notify a Telegram group when configured League of Legends players start a game.
 url: https://github.com/Arxxi/TelegramNotificationBot-HomeAssistant/tree/main/lol-telegram-notifier
@@ -22,6 +22,12 @@ options:
   allowed_queue_ids: []
   max_group_size: 5
   repeat_notifications_for_testing: false
+  profile_icons_enabled: false
+  emoji_set_owner_user_id: null
+  statistics_enabled: false
+  weekly_recap_time: "10:00"
+  minimum_pair_games: 3
+  match_retention_days: 90
 schema:
   telegram_bot_token: password
   riot_api_key: password
@@ -39,3 +45,9 @@ schema:
     - int
   max_group_size: int(1,)
   repeat_notifications_for_testing: bool
+  profile_icons_enabled: bool
+  emoji_set_owner_user_id: int?
+  statistics_enabled: bool
+  weekly_recap_time: str
+  minimum_pair_games: int(1,)
+  match_retention_days: int(1,)
